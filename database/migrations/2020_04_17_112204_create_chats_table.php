@@ -17,9 +17,6 @@ class CreateChatsTable extends Migration
             $table->id();
             $table->string('iq');
             $table->string('ia');
-            $table->string('eq');
-            $table->string('ea');
-            $table->string('jq');
             $table->string('ja');
             $table->string('image');
             $table->string('voice');

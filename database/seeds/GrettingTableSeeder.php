@@ -13,10 +13,10 @@ class GrettingTableSeeder extends Seeder
     public function run()
     {
         Gretting::create([
-            'ind' => "Perkenalkan nama saya maid~chan",
-            'jpn' => "はじめまして 私の名前は～です みか",
+            'ind' => "Perkenalkan Namaku Natsuki Suzuki. Senang bertemu dengan kalian!  ",
+            'jpn' => "はじめまして、鈴木ナツキです。よろしくお願いします。",
             'image' => "default.jpg",
-            'voice' => "default.ogg",
+            'voice' => "perkenalan.ogg",
         ]);
         Gretting::create([
             'ind' => "Selamat pagi!",
@@ -51,6 +51,12 @@ class GrettingTableSeeder extends Seeder
         Gretting::create([
             'ind' => "Ya!",
             'jpn' => "はい",
+            'image' => "default.jpg",
+            'voice' => "default.ogg",
+        ]);
+        Gretting::create([
+            'ind' => "Saya tidak mengerti!",
+            'jpn' => "わかりません",
             'image' => "default.jpg",
             'voice' => "default.ogg",
         ]);

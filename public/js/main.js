@@ -16,8 +16,7 @@ $(function(){
                 console.log("success");
                 console.log(data);
                 $('#nama').val("");
-                $('#japan').html("<h1>"+data.success[0].ja+"</h1>");
-                $('#indonesia').html("<p>"+data.success[0].ia+"</p>");
+                $('#japan').html(data);
             }
         })
         // end of ajax call

@@ -12,8 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('permission',function(){
+    return view('permission');
+});
 Route::get('/', 'SearchController@index');
 Route::get('/main', 'SearchController@main');
 
 Route::post('search', 'SearchController@search');
+Route::post('nama', 'SearchController@nama');
