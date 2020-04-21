@@ -55,8 +55,8 @@ class GrettingTableSeeder extends Seeder
             'voice' => "default.ogg",
         ]);
         Gretting::create([
-            'ind' => "Saya tidak mengerti!",
-            'jpn' => "わかりません",
+            'ind' => "Saya tidak mengerti, apa yang kamu katakan",
+            'jpn' => "わかりません あなたが言うこと",
             'image' => "default.jpg",
             'voice' => "default.ogg",
         ]);

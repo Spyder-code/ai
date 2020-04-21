@@ -67,8 +67,6 @@ class SearchController extends Controller
         $nama = $request->nama;
         $kosong = Gretting::where('id',8)->get();
         $data = Chat::query()->where('iq','LIKE', "%{$nama}%")
-        ->orWhere('eq','LIKE', "%{$nama}%")
-        ->orWhere('jq','LIKE', "%{$nama}%")
         ->get();
         foreach($kosong as $item){
             $output = '<h1>'.$item->jpn.'</h1>'.
